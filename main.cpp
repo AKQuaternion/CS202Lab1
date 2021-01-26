@@ -2,6 +2,10 @@
 using std::cout;
 #include "Pet.hpp"
 
+void passPetByValue(Pet joe) {
+cout << "In passPetByValue.\n";
+}
+
 int main() {
    cout << "CS 202 Lab 1\n";
    cout << "Create a local variable of an object of your class:\n";
@@ -10,5 +14,7 @@ int main() {
    Pet q(p);
    cout << "Create a local variable that uses the int constructor:\n";
    Pet r(100);
+   cout << "Pass an object by value:\n";
+   passPetByValue(p);
    return 0;
 }
