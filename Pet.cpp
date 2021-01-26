@@ -11,3 +11,7 @@ Pet::Pet() {
 Pet::~Pet() {
    cout << "Destroyed a Pet via destructor.\n";
 }
+
+Pet::Pet(const Pet &) {
+   cout << "Constructed a Pet via copy constructor.\n";
+}
