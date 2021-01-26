@@ -19,3 +19,10 @@ Pet::Pet(const Pet &orig):_name("copyOf"+orig._name) {
 Pet::Pet(const std::string &name):_name(name) {
    cout << "Constructed a Pet named _" << _name << "_ via (const std::string &) constructor.\n";
 }
+std::string Pet::getName() {
+   return _name;
+}
+
+void Pet::setName(const std::string &name) {
+   _name = name;
+}
