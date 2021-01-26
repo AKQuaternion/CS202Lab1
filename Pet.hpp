@@ -12,7 +12,7 @@ public:
    Pet(const Pet &);
    Pet(const std::string &name);
    ~Pet();
-   std::string getName();
+   std::string getName() const;
    void setName(const std::string &name);
 private:
    std::string _name;
