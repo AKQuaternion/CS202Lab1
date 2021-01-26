@@ -10,6 +10,10 @@ void passPetByReference(Pet &bill) {
    cout << "In passPetByReference.\n";
 }
 
+void passPetByReferenceToConst(Pet const &bill) {
+   cout << "In passPetByReferenceToConst.\n";
+}
+
 int main() {
    cout << "CS 202 Lab 1\n";
    cout << "Create a local variable of an object of your class:\n";
@@ -22,5 +26,7 @@ int main() {
    passPetByValue(p);
    cout << "Pass an object by reference:\n";
    passPetByReference(p);
+   cout << "Pass an object by reference to const:\n";
+   passPetByReferenceToConst(p);
    return 0;
 }
