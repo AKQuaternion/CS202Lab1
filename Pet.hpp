@@ -4,6 +4,7 @@
 
 #ifndef CS202LAB1_PET_HPP
 #define CS202LAB1_PET_HPP
+#include <string>
 
 class Pet {
 public:
@@ -11,6 +12,8 @@ public:
    Pet(const Pet &);
    Pet(int);
    ~Pet();
+private:
+   std::string _name;
 };
 
 

@@ -4,16 +4,16 @@
 #include <iostream>
 using std::cout;
 #include "Pet.hpp"
-Pet::Pet() {
-   cout << "Constructed a Pet via default constructor.\n";
+Pet::Pet():_name("default") {
+   cout << "Constructed a Pet named _default_ via default constructor.\n";
 }
 
 Pet::~Pet() {
-   cout << "Destroyed a Pet via destructor.\n";
+   cout << "Destroyed a Pet named _" << _name << "_ via destructor.\n";
 }
 
-Pet::Pet(const Pet &) {
-   cout << "Constructed a Pet via copy constructor.\n";
+Pet::Pet(const Pet &orig):_name("copyOf"+orig._name) {
+   cout << "Constructed a Pet named _" << _name << "_ via copy constructor.\n";
 }
 
 Pet::Pet(int) {
