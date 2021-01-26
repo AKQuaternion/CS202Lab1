@@ -7,3 +7,7 @@ using std::cout;
 Pet::Pet() {
    cout << "Constructed a Pet via default constructor.\n";
 }
+
+Pet::~Pet() {
+   cout << "Destroyed a Pet via destructor.\n";
+}

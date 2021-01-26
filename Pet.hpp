@@ -8,6 +8,7 @@
 class Pet {
 public:
    Pet();
+   ~Pet();
 };
 
 
