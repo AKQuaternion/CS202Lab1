@@ -10,7 +10,7 @@ class Pet {
 public:
    Pet();
    Pet(const Pet &);
-   Pet(int);
+   Pet(const std::string &name);
    ~Pet();
 private:
    std::string _name;
