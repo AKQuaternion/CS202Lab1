@@ -1,5 +1,8 @@
 #include <iostream>
 using std::cout;
+#include <vector>
+using std::vector;
+
 #include "Pet.hpp"
 
 void passPetByValue(Pet joe) {
@@ -36,5 +39,7 @@ int main() {
    passPetByReferenceToConst(p);
    cout << "Return an object by value:\n";
    returnPetByValue();
+   cout << "Create a vector of 5 objects:\n";
+   vector<Pet> v(5);
    return 0;
 }
