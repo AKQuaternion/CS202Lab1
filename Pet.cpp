@@ -16,6 +16,6 @@ Pet::Pet(const Pet &orig):_name("copyOf"+orig._name) {
    cout << "Constructed a Pet named _" << _name << "_ via copy constructor.\n";
 }
 
-Pet::Pet(int) {
-   cout << "Constructed a Pet via (int) constructor.\n";
+Pet::Pet(const std::string &name):_name(name) {
+   cout << "Constructed a Pet named _" << _name << "_ via (const std::string &) constructor.\n";
 }
