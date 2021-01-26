@@ -9,6 +9,7 @@ class Pet {
 public:
    Pet();
    Pet(const Pet &);
+   Pet(int);
    ~Pet();
 };
 

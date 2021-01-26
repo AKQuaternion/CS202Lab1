@@ -8,5 +8,7 @@ int main() {
    Pet p;
    cout << "Create a local variable that is a copy of another object of your class:\n";
    Pet q(p);
+   cout << "Create a local variable that uses the int constructor:\n";
+   Pet r(100);
    return 0;
 }
